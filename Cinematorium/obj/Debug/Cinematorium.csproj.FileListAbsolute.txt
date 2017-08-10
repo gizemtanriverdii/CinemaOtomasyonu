@@ -1,0 +1,2 @@
+C:\Users\packardbell\Desktop\Cinamatorium1\CinemtoriumPro\CinamtoriumPro\Cinematorium\bin\Debug\Cinematorium.exe.config
+C:\Users\packardbell\Desktop\Masaüstü\CinamatoriumGithubGüncel09.08.2017\CinemtoriumPro\CinamtoriumPro\Cinematorium\bin\Debug\Cinematorium.exe.config

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B69DEF5-E422-4FFF-968E-E9622BFD28F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cinematorium</RootNamespace>
+    <AssemblyName>Cinematorium</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FakeData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FakeData.1.0.0\lib\FakeData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\FormAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddCustomer.Designer.cs">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAccountant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAccountant.Designer.cs">
+      <DependentUpon>FormAccountant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddSession.Designer.cs">
+      <DependentUpon>FormAddSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDeleteMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDeleteMovie.Designer.cs">
+      <DependentUpon>FormDeleteMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDeleteSaloon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDeleteSaloon.Designer.cs">
+      <DependentUpon>FormDeleteSaloon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDeleteSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDeleteSession.Designer.cs">
+      <DependentUpon>FormDeleteSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTicketSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTicketSales.Designer.cs">
+      <DependentUpon>FormTicketSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddSaloon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddSaloon.Designer.cs">
+      <DependentUpon>FormAddSaloon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddMovie.Designer.cs">
+      <DependentUpon>FormAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUserProcesses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUserProcesses.Designer.cs">
+      <DependentUpon>FormUserProcesses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormAddCustomer.resx">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAccountant.resx">
+      <DependentUpon>FormAccountant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddMovie.resx">
+      <DependentUpon>FormAddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddSession.resx">
+      <DependentUpon>FormAddSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDeleteMovie.resx">
+      <DependentUpon>FormDeleteMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDeleteSaloon.resx">
+      <DependentUpon>FormDeleteSaloon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDeleteSession.resx">
+      <DependentUpon>FormDeleteSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTicketSales.resx">
+      <DependentUpon>FormTicketSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddSaloon.resx">
+      <DependentUpon>FormAddSaloon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUserProcesses.resx">
+      <DependentUpon>FormUserProcesses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cinematorium.DataAccessLayer\Cinematorium.DataAccessLayer.csproj">
+      <Project>{67fadae4-5051-4e22-99a6-5b88d85f4e1f}</Project>
+      <Name>Cinematorium.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cinematorium.Entities\Cinematorium.Entities.csproj">
+      <Project>{0ccf436e-a327-49e3-b66e-838dc12d4f3f}</Project>
+      <Name>Cinematorium.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widescreen-for-blue-pattern-background-with-viewing-gallery-for-wallpaper-pattern-blue-with-hd-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k_19203526_filmstrip.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\1 %281%29.jpg" />
+    <None Include="Resources\if_login_173049.png" />
+    <None Include="Resources\if_Locked_Cell_Door_128415.png" />
+    <None Include="Resources\if_document-save-as_23221.png" />
+    <None Include="Resources\indir.jpg" />
+    <None Include="Resources\sinema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-of-objects-to-see-a-movie_23-2147599681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hollywood-font-b-Movie-b-font-Film-Wood-photo-backdrop-High-grade-Vinyl-silk-cloth-Computer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-photo-movie-clapper-and-film-reel-on-a-wooden-background-169841813.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-photo-seamless-background-with-movie-make-equipment-objects-581237167.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application-Exit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Camera_669941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_movie_add_17406.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_save_money_1312863.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_free-09_463017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-page-wallpaper.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinematorium-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveAndClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_209-User_2124118 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_InterfaceExpendet-01_592600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ticket_1608951.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope-stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_213-User_2124129 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-94_667356.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Audio_-_Video_-_Game_05_2298390.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_exit_2427705.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Business1_2316014 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_thefreeforty_profile_sheet_1243699.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_AccountingAuditor_5_2175891.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Wheelchair_Accessible_751069.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_home_house_real_estate_392500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_circle-edit-article_1495216.png" />
+    <None Include="Resources\if_flat-style-circle-save_1312549.png" />
+    <None Include="Resources\if_flat-style-circle-redo_1312546.png" />
+    <None Include="Resources\if_flat-style-circle-undo_1312544.png" />
+    <None Include="Resources\if_InterfaceExpendet-10_592607.png" />
+    <None Include="Resources\if_free-09_4630171.png" />
+    <None Include="Resources\if_InterfaceExpendet-01_5926001.png" />
+    <None Include="Resources\movie.jpg" />
+    <None Include="Resources\movie2.jpg" />
+    <None Include="Resources\movie3.jpg" />
+    <None Include="Resources\movie4.jpg" />
+    <None Include="Resources\movie5.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\if_video_2199115.png" />
+    <None Include="Resources\if_video_21991151.png" />
+    <None Include="Resources\if__movie-festival2_2324154.png" />
+    <None Include="Resources\if_business-coins-money-stack-salary-glyph_763193 %281%29.png" />
+    <None Include="Resources\if_total_plan_cost_64896.png" />
+    <None Include="Resources\if_counter_62799.png" />
+    <None Include="Resources\if_business-work_2_2377644.ico" />
+    <None Include="Resources\if_13_Tax_1871418.ico" />
+    <None Include="Resources\if_home_134213.png" />
+    <Content Include="Resources\salon2jpg.jpg" />
+    <None Include="Resources\salon2jpg1.jpg" />
+    <Content Include="Resources\salon3.jpg" />
+    <None Include="Resources\salon31.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
